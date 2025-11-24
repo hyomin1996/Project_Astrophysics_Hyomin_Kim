@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cds.unistra.fr
+    Date: 2025-11-23T18:53:52 [V7.5.3]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2025-11-23T18:53:52">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cds.unistra.fr/viz-bin/votable?-oc.form=dec&amp;-out.max=unlimited&amp;-c.eq=J2000&amp;-c.r=  2&amp;-c.u=arcmin&amp;-c.geom=r&amp;-source=J/AJ/123/290/table4&amp;-order=I&amp;-out=SBL&amp;-out=RAJ2000&amp;-out=DEJ2000&amp;-out=Vmag&amp;-out=V-Ic&amp;-out=B-V&amp;-out=U-B&amp;-out=Prob&amp;-out=SpType&amp;">  Full request URL (POST)</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="7.5.3">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_51230290" name="J/AJ/123/290" type="results">
+  <DESCRIPTION>UBVI CCD photometry of NGC 2516 (Sung+, 2002)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/j/aj/123/290">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Sung H.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2002AJ....123..290S">    Article or Data origin sources  </INFO>
+  <INFO name="editor" value="Astronomical Journal (AAS)">    Editor name (article)  </INFO>
+  <INFO name="original_date" value="2002">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/123/290">    Dataset landing page  </INFO>
+  <INFO name="citation" value="doi:10.26093/cds/vizier.51230290">    Dataset identifier that can be used for citation  </INFO>
+  <INFO name="publication_date" value="2023-04-06">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TABLE ID="J_AJ_123_290_table4" name="J/AJ/123/290/table4">
+    <DESCRIPTION>Photometric data for known white dwarfs in NGC 2516</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/AJ/123/290/table4 -->
+    <FIELD name="SBL" ucd="meta.id" datatype="short" width="4"><!-- ucd="ID_NUMBER" -->
+      <DESCRIPTION>Object running number identification (1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="RAJ2000" ucd="pos.eq.ra;meta.main" ref="J2000" datatype="char" arraysize="11" xtype="hms"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Hour of Right Ascension (J2000)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DEJ2000" ucd="pos.eq.dec;meta.main" ref="J2000" datatype="char" arraysize="11" xtype="dms"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Degree of Declination (J2000)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vmag" ucd="phot.mag;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_V" -->
+      <DESCRIPTION>The weighted mean Johnson V band magnitude</DESCRIPTION>
+    </FIELD>
+    <FIELD name="V-Ic" ucd="phot.color;em.opt.V;em.opt.I" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_COUS_V-I" -->
+      <DESCRIPTION>? The weighted mean Johnson-Cousins (V-Ic) color</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="B-V" ucd="phot.color;em.opt.B;em.opt.V" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_B-V" -->
+      <DESCRIPTION>? The weighted mean Johnson-Cousins (B-V) color</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="U-B" ucd="phot.color;em.opt.U;em.opt.B" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_JHN_U-B" -->
+      <DESCRIPTION>? The weighted mean Johnson-Cousins (U-B) color</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="Prob" ucd="stat.fit.goodness" datatype="float" width="5" precision="2"><!-- ucd="STAT_PROBABILITY" -->
+      <DESCRIPTION>? King (1978, J. Proc. R. Soc. New South Wales, 111, 61) proper motion membership probability</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+    <FIELD name="SpType" ucd="src.spType" datatype="char" arraysize="8*"><!-- ucd="SPECT_TYPE_MK" -->
+      <DESCRIPTION>Spectral type</DESCRIPTION>
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>4142</TD><TD>07 57 03.11</TD><TD>-60 54 53.0</TD><TD>19.344</TD><TD></TD><TD>-0.010</TD><TD>-1.214</TD><TD></TD><TD></TD></TR>
+<TR><TD>5205</TD><TD>07 57 50.64</TD><TD>-60 49 54.4</TD><TD>18.914</TD><TD></TD><TD>-0.106</TD><TD>-1.123</TD><TD></TD><TD></TD></TR>
+<TR><TD>5262</TD><TD>07 57 53.74</TD><TD>-60 28 49.6</TD><TD>19.286</TD><TD>-0.080</TD><TD>-0.156</TD><TD>-0.989</TD><TD></TD><TD></TD></TR>
+<TR><TD>6445</TD><TD>07 58 49.17</TD><TD>-60 48 23.3</TD><TD>19.188</TD><TD></TD><TD>-0.093</TD><TD>-1.259</TD><TD></TD><TD></TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="4">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+</RESOURCE>
+</VOTABLE>
